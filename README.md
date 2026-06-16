@@ -1,22 +1,34 @@
 # Film Listem
 
-TMDB API ile film arama, favoriler (MySQL) ve kategori filtreleri.
+TMDB (The Movie Database) API kullanan, film arama ve favori listesi oluşturma uygulaması.  
+Frontend HTML/CSS/JavaScript, backend Node.js/Express, favoriler MySQL veritabanında saklanır.
 
-## Kurulum
+---
 
-1. XAMPP → MySQL açık
-2. phpMyAdmin → `setup.sql` çalıştır
-3. `backend/.env.example` dosyasını `.env` olarak kopyala, TMDB anahtarını yaz
-4. Terminal:
-   ```
-   cd backend
-   npm install
-   cd ..
-   npm install
-   npm start
-   ```
-5. Tarayıcı: http://localhost:3000
+## Özellikler
 
-## TMDB API Key
+- **Film arama** — TMDB üzerinden isimle arama
+- **Anasayfa kategorileri** — Macera, Bilim Kurgu, Romantik, Aksiyon, Komedi, Korku
+- **Gelişmiş filtreler** — film dili, Türkçe altyazı, kategori
+- **Sıralama** — puana veya yıla göre
+- **Film detay modalı** — özet, puan, süre, türler, dil, altyazı, yaş sınırı
+- **YouTube fragman** — detay sayfasında gömülü oynatıcı
+- **Nerede izlenir** — platform listesi ve TMDB izleme linki
+- **Favoriler** — MySQL'e kayıt, tekrar ekleme engeli, silme
+- **Toast bildirimleri** — kullanıcı dostu geri bildirim
+- **Responsive arayüz** — modern ve animasyonlu tasarım
 
-https://www.themoviedb.org/settings/api adresinden ücretsiz alınır.
+---
+
+## Kullanılan Teknolojiler
+
+| Katman | Teknolojiler |
+|--------|--------------|
+| Frontend | HTML5, CSS3, JavaScript (Vanilla) |
+| Backend | Node.js, Express |
+| Veritabanı | MySQL (XAMPP) |
+| API | TMDB REST API |
+
+---
+
+## Proje Yapısı
