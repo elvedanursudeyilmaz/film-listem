@@ -3,6 +3,10 @@
 TMDB (The Movie Database) API kullanan, film arama ve favori listesi oluşturma uygulaması.  
 Frontend HTML/CSS/JavaScript, backend Node.js/Express, favoriler MySQL veritabanında saklanır.
 
+## Canlı demo
+
+https://film-listem-production.up.railway.app
+
 ---
 
 ## Özellikler
@@ -121,4 +125,7 @@ npm start
 
 ---
 
+## Geliştirici
 
+**Elveda Nur Sude Yılmaz**  
+GitHub: [@elvedanursudeyilmaz](https://github.com/elvedanursudeyilmaz)
