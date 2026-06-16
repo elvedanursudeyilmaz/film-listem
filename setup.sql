@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS film_arama;
+USE film_arama;
+
+CREATE TABLE IF NOT EXISTS favoriler (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  film_adi VARCHAR(255) NOT NULL,
+  poster TEXT,
+  yil VARCHAR(10),
+  eklenme_tarihi TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

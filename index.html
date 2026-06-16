@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Listem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="header-icerik">
+        <div>
+          <h1>Film <span>Listem</span></h1>
+          <p>Binlerce film arasından ara, favorilerine kaydet</p>
+        </div>
+        <button id="favorilereGit" class="favori-git-btn" type="button">♥ Favorilerim</button>
+      </div>
+    </header>
+
+    <div class="arama-kutusu">
+      <input type="text" id="aramaInput" placeholder="Film adı yaz...">
+      <button id="araBtn">Ara</button>
+    </div>
+
+    <div class="filtre-panel">
+      <h3 class="filtre-baslik">Filtreler</h3>
+      <div class="filtre-satir">
+        <label for="dilSelect">Film Dili</label>
+        <select id="dilSelect">
+          <option value="">Tüm diller</option>
+          <option value="tr">Türkçe</option>
+          <option value="en">İngilizce</option>
+          <option value="fr">Fransızca</option>
+          <option value="de">Almanca</option>
+          <option value="es">İspanyolca</option>
+          <option value="ko">Korece</option>
+          <option value="ja">Japonca</option>
+        </select>
+      </div>
+      <div class="filtre-satir">
+        <label for="altyaziSelect">Türkçe Altyazı</label>
+        <select id="altyaziSelect">
+          <option value="">Fark etmez</option>
+          <option value="var">Altyazılı</option>
+          <option value="yok">Altyazısız</option>
+        </select>
+      </div>
+      <div class="filtre-satir">
+        <label for="kategoriSelect">Kategori</label>
+        <select id="kategoriSelect">
+          <option value="">Tüm kategoriler</option>
+          <option value="12">Macera</option>
+          <option value="878">Bilim Kurgu</option>
+          <option value="10749">Romantik</option>
+          <option value="28">Aksiyon</option>
+          <option value="35">Komedi</option>
+          <option value="27">Korku</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="anasayfa"></div>
+
+    <div id="aramaAlani" style="display:none">
+      <h2 class="bolum-baslik" id="bolumBaslik">Arama Sonuçları</h2>
+      <p class="bolum-aciklama" id="bolumAciklama"></p>
+      <div id="siralamaAlani" class="siralama-alani">
+        <label for="siralamaSelect">Sırala:</label>
+        <select id="siralamaSelect">
+          <option value="varsayilan">Varsayılan</option>
+          <option value="puan">Puana göre (yüksek)</option>
+          <option value="yil">Yıla göre (yeni)</option>
+        </select>
+      </div>
+      <div id="filmler" class="film-listesi"></div>
+    </div>
+
+    <div id="favorilerBolum" class="favoriler-bolum">
+      <h2 class="bolum-baslik">Favorilerim</h2>
+      <div id="favoriler" class="film-listesi"></div>
+    </div>
+  </div>
+
+  <div id="bildirimAlani" class="bildirim-alani"></div>
+
+  <div id="filmModal" class="modal">
+    <div class="modal-icerik">
+      <button class="modal-kapat" id="modalKapat">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
